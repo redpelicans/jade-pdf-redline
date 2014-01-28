@@ -1,0 +1,30 @@
+{
+  "name": "jade-pdf"
+, "version": "0.0.1"
+, "description": "Jade to PDF converter"
+, "main": "index.js"
+, "keywords": [
+    "jade"
+  , "pdf"
+  , "convert"
+  , "template"
+  ]
+, "author": "Nicolas Briemant"
+, "homepage": "htps://github.com/redpelicans/jade-pdf"
+, "repository": {
+    "type": "git"
+  , "url": "git@github.com:redpelicans/jade-pdf.git"
+  }
+, "bugs": {
+    "url": "https://github.com/redpelicans/jade-pdf/issues"
+  }
+, "licenses": {
+    "type": "MIT"
+  , "url": "https://github.com/redpelicans/jade-pdf/blob/master/LICENSE"
+  }
+, "dependencies": {}
+, "devDependencies": {}
+, "engines": {
+    "node": "~0.10.0"
+  }
+}
