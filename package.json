@@ -1,5 +1,5 @@
 {
-  "name": "jade-pdf"
+  "name": "jade-pdf-redline"
 , "version": "0.0.1"
 , "description": "Jade to PDF converter"
 , "main": "index.js"
@@ -10,21 +10,29 @@
   , "template"
   ]
 , "author": "Nicolas Briemant"
-, "homepage": "htps://github.com/redpelicans/jade-pdf"
+, "homepage": "htps://github.com/redpelicans/jade-pdf-redline"
 , "repository": {
     "type": "git"
-  , "url": "git@github.com:redpelicans/jade-pdf.git"
+  , "url": "git@github.com:redpelicans/jade-pdf-redline.git"
   }
 , "bugs": {
-    "url": "https://github.com/redpelicans/jade-pdf/issues"
+    "url": "https://github.com/redpelicans/jade-pdf-redline/issues"
   }
 , "licenses": {
     "type": "MIT"
-  , "url": "https://github.com/redpelicans/jade-pdf/blob/master/LICENSE"
+  , "url": "https://github.com/redpelicans/jade-pdf-redline/blob/master/LICENSE"
   }
 , "dependencies": {}
-, "devDependencies": {}
+, "devDependencies": {
+    "mocha": "latest"
+  , "mocha-lcov-reporter": "latest"
+  , "should": "latest"
+  , "coveralls": "latest"
+  }
 , "engines": {
     "node": "~0.10.0"
+  }
+, "scripts": {
+    "test": "make test"
   }
 }
