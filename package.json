@@ -22,7 +22,13 @@
     "type": "MIT"
   , "url": "https://github.com/redpelicans/jade-pdf-redline/blob/master/LICENSE"
   }
-, "dependencies": {}
+, "dependencies": {
+    "through": "~2.3.4"
+  , "jade": "~1.1.5"
+  , "phantomjs": "~1.9.7-1"
+  , "tmp": "~0.0.23"
+  , "duplexer": "~0.1.1"
+  }
 , "devDependencies": {
     "mocha": "latest"
   , "mocha-lcov-reporter": "latest"
