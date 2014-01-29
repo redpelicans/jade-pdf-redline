@@ -28,11 +28,13 @@
   , "mocha-lcov-reporter": "latest"
   , "should": "latest"
   , "coveralls": "latest"
+  , "jscoverage": "latest"
   }
 , "engines": {
     "node": "~0.10.0"
   }
 , "scripts": {
-    "test": "make test-coveralls"
+    "test": "make test"
+  , "coveralls": "make test-coveralls"
   }
 }

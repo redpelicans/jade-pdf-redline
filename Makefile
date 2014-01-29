@@ -9,13 +9,15 @@ test-w:
 lib-cov:
 	jscoverage --no-highlight lib lib-cov
 
+clean:
+	rm -rf lib-cov
+
 test-cov: lib-cov
 	@COVERAGE=1 $(MAKE) test REPORTER=html-cov > coverage.html
+	$(MAKE) clean
 
 test-coveralls: lib-cov
 	@COVERAGE=1 $(MAKE) test REPORTER=mocha-lcov-reporter | ./node_modules/coveralls/bin/coveralls.js
-
-clean:
-	rm -rf lib-cov
+	$(MAKE) clean
 
 .PHONY: test test-w
