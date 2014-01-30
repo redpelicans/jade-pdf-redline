@@ -35,6 +35,7 @@
   , "should": "latest"
   , "coveralls": "latest"
   , "jscoverage": "latest"
+  , "jshint": "latest"
   }
 , "engines": {
     "node": "~0.10.0"

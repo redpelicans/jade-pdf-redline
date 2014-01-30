@@ -1,3 +1,6 @@
+/* jshint node: true */
+use strict;
+
 var system = require('system')
   , page = require('webpage').create();
 

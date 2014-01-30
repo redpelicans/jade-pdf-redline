@@ -1,3 +1,6 @@
+/* jshint node: true */
+use strict;
+
 var jadepdf = require('../')
   , assert = require('assert')
   , fs = require('fs')

@@ -6,6 +6,9 @@ test:
 test-w:
 	@NODE_ENV=test ./node_modules/.bin/mocha --reporter $(REPORTER) --watch
 
+lint:
+	./node_modules/.bin/jshint ./lib ./lib-phantom ./test ./index.js
+
 lib-cov:
 	jscoverage --no-highlight lib lib-cov
 
