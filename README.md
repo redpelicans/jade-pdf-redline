@@ -75,7 +75,7 @@ Options:
 
   -h, --help                             output usage information
   -V, --version                          output the version number
-  <markdown-file-path>                   Path of the markdown file to convert
+  <jade-file-path>                       Path of the jade file to convert
   -p, --phantom-path [path]              Path to phantom binary
   -s, --css-path [path]                  Path to custom CSS file
   -f, --paper-format [format]            'A3', 'A4', 'A5', 'Legal', 'Letter' or 'Tabloid'
