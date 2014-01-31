@@ -59,4 +59,4 @@ Supported dimension units are: 'mm', 'cm', 'in', 'px'
 Type: `Number`
 Default value: `1000`
 
-Delay in millis before rendering the PDF (give HTML and CSS a chance to load)
+Delay in ms before rendering the PDF (give HTML and CSS a chance to load)
