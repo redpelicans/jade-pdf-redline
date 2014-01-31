@@ -60,3 +60,33 @@ Type: `Number`
 Default value: `1000`
 
 Delay in ms before rendering the PDF (give HTML and CSS a chance to load)
+
+CLI interface
+---
+
+### Installation
+
+To use jade-pdf-redline as a standalone program from the terminal run
+
+```sh
+npm install -g jade-pdf-redline
+```
+
+### Usage
+
+```sh
+Usage: jade-pdf [options] <jade-file-path>
+
+Options:
+
+  -h, --help                             output usage information
+  -V, --version                          output the version number
+  <markdown-file-path>                   Path of the markdown file to convert
+  -p, --phantom-path [path]              Path to phantom binary
+  -s, --css-path [path]                  Path to custom CSS file
+  -f, --paper-format [format]            'A3', 'A4', 'A5', 'Legal', 'Letter' or 'Tabloid'
+  -r, --paper-orientation [orientation]  'portrait' or 'landscape'
+  -b, --paper-border [measurement]       Supported dimension units are: 'mm', 'cm', 'in', 'px'
+  -d, --render-delay [millis]            Delay before rendering the PDF (give HTML and CSS a chance to load)
+  -o, --out [path]                       Path of where to save the PDF
+```
