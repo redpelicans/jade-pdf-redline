@@ -4,12 +4,10 @@ jade-pdf-redline [![Build Status](https://travis-ci.org/redpelicans/jade-pdf-red
 Node module that converts jade files to PDFs.
 
 ## Getting started
----
 
     npm install jade-pdf-redline
 
 ## Usage
----
 
 ```javascript
 var jadepdf = require('jade-pdf-redline')
@@ -21,7 +19,6 @@ fs.createReadStream('path/to/template.jade')
 ```
 
 ## Options
----
 
 Pass an options object (`jadepdf({/* options */})`) to configure the output.
 
@@ -85,7 +82,7 @@ Options:
   -f, --paper-format [format]            'A3', 'A4', 'A5', 'Legal', 'Letter' or 'Tabloid'
   -r, --paper-orientation [orientation]  'portrait' or 'landscape'
   -b, --paper-border [measurement]       Supported dimension units are: 'mm', 'cm', 'in', 'px'
-  -d, --render-delay [millis]            Delay before rendering the PDF (give HTML and CSS a chance to load)
+  -d, --render-delay [millis]            Delay before rendering the PDF
   -o, --out [path]                       Path of where to save the PDF
 ```
 
