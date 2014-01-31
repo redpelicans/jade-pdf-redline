@@ -1,5 +1,5 @@
 /* jshint node: true */
-use strict;
+'use strict';
 
 var system = require('system')
   , page = require('webpage').create();

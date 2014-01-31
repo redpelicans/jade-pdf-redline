@@ -1,4 +1,4 @@
 /* jshint node: true */
-use strict;
+'use strict';
 
 module.exports = process.env.COVERAGE ? require('./lib-cov') : require('./lib');
