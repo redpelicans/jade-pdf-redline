@@ -4,7 +4,15 @@ use strict;
 var system = require('system')
   , page = require('webpage').create();
 
-var args = ['in', 'out'].reduce(function(args, name, i) {
+var args = [
+  'in'
+, 'out'
+, 'cssPath'
+, 'paperFormat'
+, 'paperOrientation'
+, 'paperBorder'
+, 'renderDelay'
+].reduce(function(args, name, i) {
   args[name] = system.args[i+1];
   return args
 }, {});
@@ -16,9 +24,24 @@ page.open(args.in, function(status) {
     return;
   }
 
+  page.evaluate(addCss(cssPath), args.cssPath);
+
+  page.paperSize = {
+    format: args.paperFormat
+  , orientation: args.paperOrientation
+  , border: args.paperBorder
+  };
+
   setTimeout(function () {
     page.render(args.out);
     page.close();
     phantom.exit(0);
   }, 200);
 });
+
+function addCss(cssPath) {
+  var css = document.createElement('link');
+  css.rel = 'stylesheet';
+  css.href = cssPath;
+  document.querySelector('head').append(css);
+}
