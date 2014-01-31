@@ -41,5 +41,5 @@ page.open(args.in, function(status) {
     page.render(args.out);
     page.close();
     phantom.exit(0);
-  }, 200);
+  }, parseInt(args.renderDelay, 10));
 });
