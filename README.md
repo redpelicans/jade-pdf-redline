@@ -2,6 +2,7 @@ jade-pdf-redline [![Build Status](https://travis-ci.org/redpelicans/jade-pdf-red
 ===
 
 Node module that converts jade files to PDFs.
+https://npmjs.org/package/jade-pdf-redline
 
 ## Getting started
 
