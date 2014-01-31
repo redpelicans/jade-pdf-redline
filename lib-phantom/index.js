@@ -14,7 +14,7 @@ var args = [
 , 'renderDelay'
 ].reduce(function(args, name, i) {
   args[name] = system.args[i+1];
-  return args
+  return args;
 }, {});
 
 page.open(args.in, function(status) {
@@ -24,7 +24,12 @@ page.open(args.in, function(status) {
     return;
   }
 
-  page.evaluate(addCss(cssPath), args.cssPath);
+  page.evaluate(function(cssPath) {
+    var css = document.createElement('link');
+    css.rel = 'stylesheet';
+    css.href = cssPath;
+    document.querySelector('head').append(css);
+  }, args.cssPath);
 
   page.paperSize = {
     format: args.paperFormat
@@ -38,10 +43,3 @@ page.open(args.in, function(status) {
     phantom.exit(0);
   }, 200);
 });
-
-function addCss(cssPath) {
-  var css = document.createElement('link');
-  css.rel = 'stylesheet';
-  css.href = cssPath;
-  document.querySelector('head').append(css);
-}
