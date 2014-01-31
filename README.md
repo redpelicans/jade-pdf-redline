@@ -35,7 +35,7 @@ Path to phantom binary
 Type: `String`
 Default value: `../pdf.css`
 
-Path to custom CSS file, relative to the html5bp directory
+Path to custom CSS file
 
 #### options.paperFormat
 Type: `String`
