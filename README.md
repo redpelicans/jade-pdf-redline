@@ -1,8 +1,8 @@
 jade-pdf-redline [![Build Status](https://travis-ci.org/redpelicans/jade-pdf-redline.png)](https://travis-ci.org/redpelicans/jade-pdf-redline) [![Dependency Status](https://david-dm.org/redpelicans/jade-pdf-redline.png)](https://david-dm.org/redpelicans/jade-pdf-redline) [![Coverage Status](https://coveralls.io/repos/redpelicans/jade-pdf-redline/badge.png?branch=master)](https://coveralls.io/r/redpelicans/jade-pdf-redline?branch=master)
 ===
 
-Node module that converts jade files to PDFs.
-https://npmjs.org/package/jade-pdf-redline
+Node module that converts jade files to PDFs.  
+> https://npmjs.org/package/jade-pdf-redline
 
 ## Getting started
 
