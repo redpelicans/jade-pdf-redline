@@ -5,16 +5,17 @@ var jadepdf = require('../')
   , assert = require('assert')
   , fs = require('fs')
   , tmp = require('tmp')
-  , through = require('through');
+  , through = require('through')
+  , should = require('should');
 
 tmp.setGracefulCleanup();
 
-describe('jadepdf', function() {
+describe('simple hello.jade without locals to pdf', function() {
   it('should generate a non-empty PDF', function(done) {
     this.timeout(5000);
 
     tmp.file({postfix: '.pdf'}, function(err, tmpPdfPath, tmpPdfFd) {
-      assert.ifError(err);
+      should.not.exist(err);
       fs.close(tmpPdfFd);
 
       var outputStream = fs.createWriteStream(tmpPdfPath);
@@ -23,8 +24,8 @@ describe('jadepdf', function() {
 
       outputStream.on('finish', function() {
         fs.readFile(tmpPdfPath, {encoding: 'utf8'}, function (err, data) { 
-          assert.ifError(err);
-          assert.ok(data.length > 0);
+          should.not.exist(err);
+          data.length.should.be.above(0);
           done();
         });
       });
