@@ -31,12 +31,13 @@ function helper(path, done) {
 
 describe('simple jade file without locals to pdf', function() {
   it('should generate a non-empty PDF', function(done) {
-    helper('/simple/index.jade', done);
+    helper('/simple.jade', done);
   });
 });
 
 describe('complex jade file without locals to pdf', function() {
   it('should generate a non-empty PDF', function(done) {
-    helper('/complex/index.jade', done);
+    this.timeout(5000);
+    helper('/complex.jade', done);
   });
 });
