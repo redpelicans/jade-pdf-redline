@@ -9,7 +9,7 @@
   , "convert"
   , "template"
   ]
-, "author": "Nicolas Briemant"
+, "author": "Tom Ripley"
 , "homepage": "htps://github.com/redpelicans/jade-pdf-redline"
 , "repository": {
     "type": "git"
