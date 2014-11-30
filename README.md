@@ -53,6 +53,11 @@ Type: `Number`
 Default value: `1000`  
 *Delay in ms before rendering the PDF*
 
+##### options.locals
+Type: `Object`
+Default value: `{}`  
+*Locals for template*
+
 ## CLI interface
 
 ### Installation
