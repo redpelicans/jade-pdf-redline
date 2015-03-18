@@ -58,6 +58,12 @@ Type: `Object`
 Default value: `{}`  
 *Locals for template*
 
+##### options.jadeOptions
+Type: `Object`
+Default value: `{}`<br>
+[See the Jade docs](http://jade-lang.com/api/)
+
+
 ## CLI interface
 
 ### Installation
