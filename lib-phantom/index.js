@@ -11,6 +11,7 @@ var args = [
 , 'paperFormat'
 , 'paperOrientation'
 , 'paperBorder'
+, 'footerAdditionalHTML'
 , 'renderDelay'
 ].reduce(function(args, name, i) {
   args[name] = system.args[i+1];
@@ -34,7 +35,14 @@ page.open(args.in, function(status) {
   page.paperSize = {
     format: args.paperFormat
   , orientation: args.paperOrientation
-  , border: args.paperBorder
+  , border: JSON.parse(args.paperBorder)
+  , footer: {
+      height: '0.6in',
+      contents: phantom.callback(function(pageNum, numPages) {
+        if (pageNum === 1) { return; }
+        return "<footer style='display: table; text-align: center; font-size: 8pt; height: 100%; width: 100%;'><p style='display: table-cell; vertical-align: bottom;'>" + args.footerAdditionalHTML + "page " + pageNum + " of " + numPages + "</footer>";
+      })
+    }
   };
 
   setTimeout(function () {
