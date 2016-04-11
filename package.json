@@ -10,7 +10,7 @@
   , "template"
   ]
 , "author": "Tom Ripley"
-, "homepage": "htps://github.com/redpelicans/jade-pdf-redline"
+, "homepage": "https://github.com/redpelicans/jade-pdf-redline"
 , "repository": {
     "type": "git"
   , "url": "git@github.com:redpelicans/jade-pdf-redline.git"
