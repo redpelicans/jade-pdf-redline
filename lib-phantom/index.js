@@ -28,7 +28,7 @@ page.open(args.in, function(status) {
     var css = document.createElement('link');
     css.rel = 'stylesheet';
     css.href = cssPath;
-    document.querySelector('head').append(css);
+    document.querySelector('head').appendChild(css);
   }, args.cssPath);
 
   page.paperSize = {

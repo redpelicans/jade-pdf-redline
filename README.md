@@ -1,4 +1,4 @@
-jade-pdf-redline [![Build Status](https://travis-ci.org/redpelicans/jade-pdf-redline.png)](https://travis-ci.org/redpelicans/jade-pdf-redline) [![Dependency Status](https://david-dm.org/redpelicans/jade-pdf-redline.png)](https://david-dm.org/redpelicans/jade-pdf-redline) [![Coverage Status](https://coveralls.io/repos/redpelicans/jade-pdf-redline/badge.png?branch=master)](https://coveralls.io/r/redpelicans/jade-pdf-redline?branch=master)
+jade-pdf-redline [![Build Status](https://travis-ci.org/CubixSystem/jade-pdf-redline.png)](https://travis-ci.org/CubixSystem/jade-pdf-redline) [![Dependency Status](https://david-dm.org/CubixSystem/jade-pdf-redline.svg)](https://david-dm.org/CubixSystem/jade-pdf-redline) [![Coverage Status](https://coveralls.io/repos/CubixSystem/jade-pdf-redline/badge.png?branch=master)](https://coveralls.io/r/CubixSystem/jade-pdf-redline?branch=master)
 ===
 
 Node module that converts jade files to PDFs.  
